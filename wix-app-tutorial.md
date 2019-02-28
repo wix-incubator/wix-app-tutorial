@@ -39,7 +39,7 @@ You should get:
 Since most developers machine are not open for inbound connection and don't has HTTPS certificates, we will use **ngrok**.
 If you are hosting your application on a server without those restriction, you can skip this step.
 
-### install and run [ngrok](https://dashboard.ngrok.com/get-started)
+### Install and run [ngrok](https://dashboard.ngrok.com/get-started)
 
 You should get something like:
 
@@ -47,9 +47,11 @@ You should get something like:
 
 **Dont't close the ngrok process** - You will need for the entire process.
 
-### setup your application URLs
+### Setup your application URLs
 Go to Workspace/OAuth and fill the **`Redirect URL`** `with https://12345678.ngrok.io/login`
+
 Go to Workspace/OAuth and fill the **`App URL`** `with https://12345678.ngrok.io/signup`
+
 **Remeber to replace '12345678' with ** your ngrok string yout got in your screen.**
 for example:
 

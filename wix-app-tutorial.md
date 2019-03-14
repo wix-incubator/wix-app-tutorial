@@ -14,14 +14,19 @@ C. Go to Workspace > OAuth and copy your `App ID` and `App Secret Key`. You will
  
 ![Create New App](images/oauth-settings.png)
 
+********* D. Go to Workspace > Webhooks and copy your `Public key`. You will need it later.
+
 ## 2. Create and run your app
 
 A. Download and install [npm](https://www.npmjs.com/get-npm)
 
 B. Clone the [Wix Sample Application](https://github.com/shaykewix/sample-wix-rest-app) to your machine
 
-C. In the **config.js file (in the `src` folder)** find and replace the APP_ID with the value you copied from Wix Developers:
-![Create New App](images/change-config.png)
+C. In the **config.js file (in the `src` folder)**:  
+  - find and replace the APP_ID with the value you copied from Wix Developers:
+![Create New App](images/change-config.png)   
+*********  - find and replace the PUBLIC_KEY with the value you copied from Wix Developers:
+********* ![Create New App](images/public-key.png)
 D. In the **credentials.js file (in the `src` folder)** find and replace the APP_SECRET  with the value you copied from Wix Developers:
 ![Create New App](images/change-credentials.png)
 

@@ -20,7 +20,8 @@ A. Download and install [npm](https://www.npmjs.com/get-npm)
 
 B. Clone the [Wix Sample Application](https://github.com/shaykewix/sample-wix-rest-app) to your machine
 
-C. In the **index.js file (in the `src` folder)** find and replace the APP_ID and APP_SECRET with the values you copied from Wix Developers:
+C. In the **config.js file (in the `src` folder)** find and replace the APP_ID with the value you copied from Wix Developers
+C. In the **credentials.js file (in the `src` folder)** find and replace the APP_SECRET  with the value you copied from Wix Developers:
 ![Create New App](images/change-app-id.png)
 
 D. Run your app
@@ -48,10 +49,10 @@ You should get something like this:
 **Don't close the ngrok process** - You will need it running for the entire process.
 
 B. Set up your application URLs
-Go to Workspace > OAuth
-in **`Redirect URL`** enter: `https://<12345678>.ngrok.io/login`
-in **`App URL`** enter: `https://<12345678>.ngrok.io/signup`
-**Remeber to replace '12345678' with ** your ngrok string you got above.**
+* Go to Workspace > OAuth
+* in **`Redirect URL`** enter: `https://<12345678>.ngrok.io/login`
+* in **`App URL`** enter: `https://<12345678>.ngrok.io/signup`  
+**Remember to replace '12345678' with ** your ngrok string you got above.**
 for example:
 
 ![Listening](images/httpsurl.png)

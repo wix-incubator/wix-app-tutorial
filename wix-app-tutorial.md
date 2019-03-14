@@ -20,68 +20,70 @@ A. Download and install [npm](https://www.npmjs.com/get-npm)
 
 B. Clone the [Wix Sample Application](https://github.com/shaykewix/sample-wix-rest-app) to your machine
 
-Edit index.js and replace the APP_ID and APP_SECERT with the values from the Wix Developer site:
+C. In the **index.js file (in the `src` folder)** find and replace the APP_ID and APP_SECRET with the values you copied from Wix Developers:
 ![Create New App](images/change-app-id.png)
 
-### Run your application
-run `npm install`
+D. Run your app
 
-run `npm build`
+* Browse to the cloned sample application
+* Run `npm install`
+* Run `npm build`
+* Run `npm start`
 
-run `npm build`
-
-You should get:
+You should get something like this:
 
 ![Listening](images/listening.png)
 
-## 3. Setup the application for receiving inbound HTTPS connections
-Since most developers machine are not open for inbound connection and don't has HTTPS certificates, we will use **ngrok**.
-If you are hosting your application on a server without those restriction, you can skip this step.
+## 3. Set up the application to receive inbound HTTPS connections
+Since most developers machine are not open for inbound connection and don't have HTTPS certificates, we will use **ngrok**.
+If you are hosting your application on a server without these restrictions, you can skip this step.
 
-### Install and run [ngrok](https://dashboard.ngrok.com/get-started)
+A. Install and run [ngrok](https://dashboard.ngrok.com/get-started)
 
-You should get something like:
+Start an HTTP tunnel on the port your app is listening on  (default is 3000)
+You should get something like this:
 
 ![ngrok screen](images/ngrok.png)
 
-**Dont't close the ngrok process** - You will need for the entire process.
+**Don't close the ngrok process** - You will need it running for the entire process.
 
-### Setup your application URLs
-Go to Workspace/OAuth and fill the **`Redirect URL`** `with https://12345678.ngrok.io/login`
-
-Go to Workspace/OAuth and fill the **`App URL`** `with https://12345678.ngrok.io/signup`
-
-**Remeber to replace '12345678' with ** your ngrok string yout got in your screen.**
+B. Set up your application URLs
+Go to Workspace > OAuth
+in **`Redirect URL`** enter: `https://<12345678>.ngrok.io/login`
+in **`App URL`** enter: `https://<12345678>.ngrok.io/signup`
+**Remeber to replace '12345678' with ** your ngrok string you got above.**
 for example:
 
 ![Listening](images/httpsurl.png)
 
- 
+
 ![update application urls](images/urls.png)
 
-Don't forget to click the Save button on the bottom right 
+Don't forget to click Save.
 
 ![save](images/save.png)
 
-## Your application should be now ready for installation and first output! 
+Well done! Now it's time to make sure your app works as expected.
 
-1. Click the `Test Your App` on the top right:
+## 4. Test your app
+
+A. Click `Test Your App`
 ![test your app](images/test-button.png)
 
-2. Click `Test Your App`:
+B. Select a site and click `Test Your App`
 
 ![site selector](images/site-selector.png)
 
-3. Click `Add To Site`:
+C. When prompted, click `Add To Site`:
 
 ![site selector](images/add-to-site.png)
 
-4. Approve the consent page by clicking `Allow and Install`:
+D. Provide consent for the app to collect data by clicking `Allow and Install`:
 
 ![site selector](images/consent.png)
 
-5. You should get a print into the browser with your application ID and your site instance ID:
+E. You should get a print into the browser with your application ID and your site instance ID:
 ![site selector](images/end.png)
 
-# You are done!
-## You can now add your Application logic and Other WIX APIs. 
+# Congrats, you're done!
+## Now you can add your Application logic and Other WIX APIs.

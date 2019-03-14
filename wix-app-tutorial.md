@@ -26,7 +26,7 @@ C. In the **config.js file (in the `src` folder)**:
   - find and replace the APP_ID with the value you copied from Wix Developers:
 ![Create New App](images/change-config.png)   
 *********  - find and replace the PUBLIC_KEY with the value you copied from Wix Developers:
-********* ![Create New App](images/public-key.png)
+********* ![Create New App](images/public-key.png)  
 D. In the **credentials.js file (in the `src` folder)** find and replace the APP_SECRET  with the value you copied from Wix Developers:
 ![Create New App](images/change-credentials.png)
 

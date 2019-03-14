@@ -1,9 +1,8 @@
-# Create your first Wix Application on your machine Tutorial  
-In this tutorial we go over how to create a Wix Application that interacts with the Wix platform 
-and you will be hopefully can submit it for the Wix Application Market, So Wix site owners can deploy it on their sites.   
-## 1. Creating an Application on Wix Developers
-First we need to go to [Wix Developers](https://dev.wix.com/) and login/signup to Wix Developers.
-Than create a new application by clicking 
+# Tutorial: Create your first Wix Application on your machine
+In this tutorial we go over how to create a Wix Application that interacts with the Wix platform that you will can submit to the Wix App Market, where Wix site owners can deploy it on their sites.   
+## 1. Set up your app in a Wix Developers account 
+A. Go to [Wix Developers](https://dev.wix.com/) and login/signup to Wix Developers.
+B. Click 
 
 ![Create New App](images/create-app.png)
 
@@ -11,15 +10,15 @@ You should get this screen:
 
 ![Create New App](images/New-App.png)
 
-Go to Workspace/OAuth and copy your `App ID` and `App Secret ID`. You will need them later.
+C. Go to Workspace > OAuth and copy your `App ID` and `App Secret Key`. You will need them later.
  
 ![Create New App](images/oauth-settings.png)
 
-## 2. Getting your app and run it
+## 2. Create and run your app
 
-Download and install [npm](https://www.npmjs.com/get-npm)
+A. Download and install [npm](https://www.npmjs.com/get-npm)
 
-Clone the [Wix Sample Application](https://github.com/shaykewix/sample-wix-rest-app)
+B. Clone the [Wix Sample Application](https://github.com/shaykewix/sample-wix-rest-app) to your machine
 
 Edit index.js and replace the APP_ID and APP_SECERT with the values from the Wix Developer site:
 ![Create New App](images/change-app-id.png)

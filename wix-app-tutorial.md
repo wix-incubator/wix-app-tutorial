@@ -83,6 +83,7 @@ C. Register your application to receive your first webhook
 * Set up the webhook callback URL to https://<12345678>.ngrok.io/webhook-callback.
 
 ![webhook url](images/webhook-callback.png)
+**Remember to replace '12345678' with ** your ngrok string you got above.**
 
 * Press Save
 * Now you should see your Public key on the bottom of the screen. copy your `Public key`. You will need it later.

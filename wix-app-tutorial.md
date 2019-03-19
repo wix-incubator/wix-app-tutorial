@@ -24,8 +24,6 @@ B. Clone the [Wix Sample Application](https://github.com/shaykewix/sample-wix-re
 C. In the **config.js file (in the `src` folder)**:  
   - find and replace the APP_ID with the value you copied from Wix Developers:
 ![Change app id](images/change-config.png)   
-  - find and replace the PUBLIC_KEY with the value you copied from Wix Developers:
-![Change public key](images/change-public-key.png)  
 
 D. In the **credentials.js file (in the `src` folder)** find and replace the APP_SECRET  with the value you copied from Wix Developers:
 ![Change app secret](images/change-credentials.png)
@@ -90,6 +88,12 @@ C. Register your application to receive your first webhook
 * Now you should see your Public key on the bottom of the screen. copy your `Public key`. You will need it later.
 
 ![public key](images/get-public-key.png)
+
+D. In the **config.js file (in the `src` folder)**:  
+  - find and replace the PUBLIC_KEY with the value you copied from Wix Developers:
+![Change public key](images/change-public-key.png)  
+
+
 
 Well done! Now it's time to make sure your app works as expected.
 

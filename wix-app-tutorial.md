@@ -21,8 +21,7 @@ A. Download and install [npm](https://www.npmjs.com/get-npm)
 
 B. Clone the [Wix Sample Application](https://github.com/shaykewix/sample-wix-rest-app) to your machine
 
-C. In the **config.js file (in the `src` folder)**:  
-  - find and replace the APP_ID with the value you copied from Wix Developers:
+C. In the **config.js file (in the `src` folder)** find and replace the APP_ID with the value you copied from Wix Developers:
 ![Change app id](images/change-config.png)   
 
 D. In the **credentials.js file (in the `src` folder)** find and replace the APP_SECRET  with the value you copied from Wix Developers:
@@ -89,8 +88,7 @@ C. Register your application to receive your first webhook
 
 ![public key](images/get-public-key.png)
 
-D. In the **config.js file (in the `src` folder)**:  
-  - find and replace the PUBLIC_KEY with the value you copied from Wix Developers:
+D. In the **config.js file (in the `src` folder)** find and replace the PUBLIC_KEY with the value you copied from Wix Developers:
 ![Change public key](images/change-public-key.png)  
 
 

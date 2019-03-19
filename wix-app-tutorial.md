@@ -14,7 +14,7 @@ C. Go to Workspace > OAuth and copy your `App ID` and `App Secret Key`. You will
  
 ![Create New App](images/oauth-settings.png)
 
-********* D. Go to Workspace > Webhooks and copy your `Public key`. You will need it later.
+D. Go to Workspace > Webhooks and copy your `Public key`. You will need it later.
 
 ## 2. Create and run your app
 

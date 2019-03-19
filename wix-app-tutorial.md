@@ -2,6 +2,7 @@
 In this tutorial we go over how to create a Wix Application that interacts with the Wix platform that you will can submit to the Wix App Market, where Wix site owners can deploy it on their sites.   
 ## 1. Set up your app in a Wix Developers account 
 A. Go to [Wix Developers](https://dev.wix.com/) and login/signup to Wix Developers.
+
 B. Click 
 
 ![Create New App](images/create-app.png)

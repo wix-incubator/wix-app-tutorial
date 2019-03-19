@@ -72,14 +72,21 @@ Don't forget to click Save.
 ![save](images/save.png)
 
 C. Register your application to receive your first webhook
-* Go to Workspace > Webhooks and add new Webhook
+* Go to Workspace > Webhooks and add new Webhook.
+
 ![New App](images/new-webhook.png)
+
 * Select the wix_developers category and APP_PROVISIONED_WEBHOOK event.
+
 ![New webhook](images/new-webhook.png)
+
 * Set up the webhook callback URL to https://<12345678>.ngrok.io/webhook-callback.
+
 ![webhook url](images/webhook-callback.png)
+
 * Press Save
 * Now you should see your Public key on the bottom of the screen. copy your `Public key`. You will need it later.
+
 ![public key](images/get-public-key.png)
 
 Well done! Now it's time to make sure your app works as expected.

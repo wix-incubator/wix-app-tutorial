@@ -78,7 +78,7 @@ C. Register your application to receive your first webhook
 
 * Select the wix_developers category and APP_PROVISIONED_WEBHOOK event.
 
-![New webhook](images/new-webhook.png)
+![New webhook](images/add-webhook.png)
 
 * Set up the webhook callback URL to https://<12345678>.ngrok.io/webhook-callback.
 

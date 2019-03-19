@@ -15,8 +15,6 @@ C. Go to Workspace > OAuth and copy your `App ID` and `App Secret Key`. You will
  
 ![oaurg](images/oauth-settings.png)
 
-D. Go to Workspace > Webhooks and copy your `Public key`. You will need it later.
-
 ## 2. Create and run your app
 
 A. Download and install [npm](https://www.npmjs.com/get-npm)
@@ -60,6 +58,7 @@ B. Set up your application URLs
 * Go to Workspace > OAuth
 * in **`Redirect URL`** enter: `https://<12345678>.ngrok.io/login`
 * in **`App URL`** enter: `https://<12345678>.ngrok.io/signup`  
+* in **`Webhook Callback URL`** enter: `https://<12345678>.ngrok.io/webhook-callback`
 **Remember to replace '12345678' with ** your ngrok string you got above.**
 for example:
 
@@ -71,6 +70,17 @@ for example:
 Don't forget to click Save.
 
 ![save](images/save.png)
+
+C. Register your application to receive your first webhook
+* Go to Workspace > Webhooks and add new Webhook
+![New App](images/new-webhook.png)
+* Select the wix_developers category and APP_PROVISIONED_WEBHOOK event.
+![New webhook](images/new-webhook.png)
+* Set up the webhook callback URL to https://<12345678>.ngrok.io/webhook-callback.
+![webhook url](images/webhook-callback.png)
+* Press Save
+* Now you should see your Public key on the bottom of the screen. copy your `Public key`. You will need it later.
+![public key](images/get-public-key.png)
 
 Well done! Now it's time to make sure your app works as expected.
 

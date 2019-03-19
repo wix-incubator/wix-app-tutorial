@@ -8,11 +8,11 @@ B. Click
 
 You should get this screen:
 
-![Create New App](images/New-App.png)
+![New App](images/New-App.png)
 
 C. Go to Workspace > OAuth and copy your `App ID` and `App Secret Key`. You will need them later.
  
-![Create New App](images/oauth-settings.png)
+![oaurg](images/oauth-settings.png)
 
 D. Go to Workspace > Webhooks and copy your `Public key`. You will need it later.
 
@@ -24,11 +24,11 @@ B. Clone the [Wix Sample Application](https://github.com/shaykewix/sample-wix-re
 
 C. In the **config.js file (in the `src` folder)**:  
   - find and replace the APP_ID with the value you copied from Wix Developers:
-![Create New App](images/change-config.png)   
+![Change app id](images/change-config.png)   
   - find and replace the PUBLIC_KEY with the value you copied from Wix Developers:
-![Create New App](images/public-key.png)  
+![Change public key](images/public-key.png)  
 D. In the **credentials.js file (in the `src` folder)** find and replace the APP_SECRET  with the value you copied from Wix Developers:
-![Create New App](images/change-credentials.png)
+![Change app secret](images/change-credentials.png)
 
 E. Run your app
 

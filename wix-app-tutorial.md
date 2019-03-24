@@ -1,7 +1,7 @@
 # Tutorial: Create your first Wix Application on your machine
 In this tutorial we go over how to create a Wix Application that interacts with the Wix platform that you will can submit to the Wix App Market, where Wix site owners can deploy it on their sites.   
 ## 1. Set up your app in a Wix Developers account 
-A. Go to [Wix Developers](https://dev.wix.com/) and login/signup to Wix Developers.
+A. Log in (or sign up) to [Wix Developers](https://dev.wix.com/).
 
 B. Click 
 
@@ -16,12 +16,12 @@ C. Go to Workspace > OAuth and copy your `App ID` and `App Secret Key`. You will
 ![oaurg](images/oauth-settings.png)
 
 ## 2. Set up the application to receive inbound HTTPS connections
-Since most developers machine are not open for inbound connection and don't have HTTPS certificates, we will use **ngrok**.
-If you are hosting your application on a server without these restrictions, you can skip this step.
+Since most developers machine are not open for inbound connection and don't have HTTPS certificates, we will describe the process using **ngrok**.
+(If you are hosting your application on a server without these restrictions, you can skip this step.)
 
-A. Install and run [ngrok](https://dashboard.ngrok.com/get-started)
+Install and run [ngrok](https://dashboard.ngrok.com/get-started)
 
-Start an HTTP tunnel on the port your app is listening on  (default is 3000)
+Note: Start an HTTP tunnel on the port your app is listening on  (default is 3000)
 You should get something like this:
 
 ![ngrok screen](images/ngrok.png)
@@ -29,10 +29,10 @@ You should get something like this:
 **Don't close the ngrok process** - You will need it running for the entire process.
 
 ## 3. Set up your application URLs
-* Go to Workspace > OAuth
-* in **`Redirect URL`** enter: `https://<12345678>.ngrok.io/login`
-* in **`App URL`** enter: `https://<12345678>.ngrok.io/signup`  
-**Remember to replace '12345678' with ** your ngrok string you got above.**
+A. Go to Workspace > OAuth
+B. In **`Redirect URL`** enter: `https://<12345678>.ngrok.io/login`
+C. in **`App URL`** enter: `https://<12345678>.ngrok.io/signup`  
+**Remember to replace '12345678' with ** your ngrok string from above.**
 for example:
 
 ![Listening](images/httpsurl.png)
@@ -40,26 +40,26 @@ for example:
 
 ![update application urls](images/urls.png)
 
-Don't forget to click Save.
+D. Click Save.
 
 ![save](images/save.png)
 
 ## 4. Register your application to receive your first webhook
-* Go to Workspace > Webhooks and add new Webhook.
+A. Go to Workspace > Webhooks and add a new webhook.
 
 ![New App](images/new-webhook.png)
 
-* Select the wix_developers category and APP_PROVISIONED_WEBHOOK event.
+B. Select the wix_developers category and the APP_PROVISIONED_WEBHOOK event.
 
 ![New webhook](images/add-webhook.png)
 
-* Set up the webhook callback URL to https://<12345678>.ngrok.io/webhook-callback.
+C. Set up the webhook callback URL to https://<12345678>.ngrok.io/webhook-callback.
 
 ![webhook url](images/webhook-callback.png)  
 
-**Remember to replace '12345678' with ** your ngrok string you got above.**
+**Remember to replace '12345678' with ** your ngrok string as discussed above.**
 
-* Press Save
+D. Click Save.
 * Now you should see your Public key on the bottom of the screen. copy your `Public key`. You will need it later.
 
 ![public key](images/get-public-key.png)
